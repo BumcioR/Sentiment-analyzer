@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Package metadata
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Python tooling
+.uv/
+.uv.lock
+.uv-cache/
+
+# Editor/IDE config
+.vscode/
+.idea/
+*.swp
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# dotenv
+.env
+.env.*
