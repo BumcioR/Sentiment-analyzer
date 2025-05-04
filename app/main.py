@@ -5,11 +5,11 @@ from app.schemas import InferenceRequest, InferenceResponse
 import cloudpickle
 
 # Załaduj model przy starcie serwera (jeden raz, oszczędnie)
-with open("app/artifacts/inference_class.pkl", "rb") as f:
+with open("artifacts/inference_class.pkl", "rb") as f:
     Inference = cloudpickle.load(f)
 
 # Inicjalizacja klasy predykcyjnej – uzupełnimy parametry, gdy je poznamy
-inference = Inference()
+inference = Inference(model_path="artifacts")
 
 app = FastAPI()
 
