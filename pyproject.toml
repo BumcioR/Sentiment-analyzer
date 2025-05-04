@@ -9,10 +9,12 @@ dependencies = [
   "uvicorn[standard]>=0.29.0",
   "torch==2.1.2",
   "transformers==4.38.2",
+  "numpy == 1.26.4",
   "joblib",
   "cloudpickle",
   "clean-text",
   "scikit-learn",
+  "unidecode",
   "pydantic>=2.6.0"
 ]
 
